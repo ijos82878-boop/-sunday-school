@@ -208,7 +208,7 @@ function render(hot){
   S.kids.forEach(k=>{if(!k.a)k.a=AV[Math.floor(Math.random()*AV.length)]});
   const b=$('board');b.innerHTML='';
   const list=sorted();
-  if(!list.length){b.innerHTML='<div class="empty">اضغط ⚙️ الإعدادات وضيفي أسماء الأطفال الموجودين 🙌</div>';}
+  if(!list.length){b.innerHTML='<div class="empty">اضغط ⚙️ الإعدادات ضيف أسماء الأطفال الموجودين 🙌</div>';}
   let rank=0,prev=null;
   list.forEach((k,i)=>{
     if(k.p!==prev){rank=i+1;prev=k.p}
