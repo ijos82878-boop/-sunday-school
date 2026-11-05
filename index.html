@@ -100,7 +100,7 @@ header,#segs,#race,#board{position:relative;z-index:1}
 
 <dialog id="dlg">
   <h2 style="margin-top:0">الأسماء الموجودة النهاردة</h2>
-  <textarea id="names" rows="4" placeholder="اكتبي الأسماء وبينهم فاصلة أو سطر جديد"></textarea>
+  <textarea id="names" rows="4" placeholder="اكتب الأسماء وبينهم فاصلة أو سطر جديد"></textarea>
   <div class="row"><button class="tool go" id="addn">إضافة الأسماء</button><span id="cnt"></span></div>
   <div id="kidlist"></div>
   <h2>فقرات اليوم</h2>
@@ -208,7 +208,7 @@ function render(hot){
   S.kids.forEach(k=>{if(!k.a)k.a=AV[Math.floor(Math.random()*AV.length)]});
   const b=$('board');b.innerHTML='';
   const list=sorted();
-  if(!list.length){b.innerHTML='<div class="empty">اضغطي ⚙️ الإعدادات وضيفي أسماء الأطفال الموجودين 🙌</div>';}
+  if(!list.length){b.innerHTML='<div class="empty">اضغط ⚙️ الإعدادات وضيفي أسماء الأطفال الموجودين 🙌</div>';}
   let rank=0,prev=null;
   list.forEach((k,i)=>{
     if(k.p!==prev){rank=i+1;prev=k.p}
